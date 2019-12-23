@@ -1,0 +1,142 @@
+html {
+	/* background-color:#2F2F2F; */
+	
+}
+
+body {
+	height: 100%;
+	background-color: rgb(255,255,255);
+}
+
+/*#header {
+    margin-left:20%;
+    top: 0px;
+    width: 80%;
+	height: 20%;
+	position: fixed;
+	font-family: 'bgMed',arial,helvetica,sans-serif;
+    font-size: 0.6em;
+    color: #fff;
+    z-index: 15;
+    text-transform: uppercase;
+    background-color: #272727;
+    border-bottom: 2px solid hsl(180,70%,55%);
+    padding-top:20px;
+    text-align:center;
+}
+*/
+#header {
+	background-color: #ffffff;
+	color: #fff;
+	font-family: "bgMed", arial, helvetica, sans-serif;
+	font-size: 0.6em;
+	text-transform: uppercase;
+	top: 0;
+	z-index: 15;
+}
+/* #footer {
+	margin-left:20%;
+    left: 0px;
+    bottom: 0px;
+    width: 80%;
+	height: 10%;
+	position: fixed;
+	font-family: 'bgMed',arial,helvetica,sans-serif;
+    font-size: 0.6em;
+    color: #fff;
+    z-index: 15;
+    text-transform: uppercase;
+    background-color: #272727;
+	padding-top:20px;   
+    text-align:center;
+} */
+#footer {
+	left: 0px;
+	bottom: 0px;
+	width: 100%;
+	height: 5%;
+	position: fixed;
+	font-family: 'bgMed', arial, helvetica, sans-serif;
+	font-size: 0.6em;
+	color: #000000;
+	z-index: 15;
+	text-transform: uppercase;
+	background-color: #c0c0c0;
+	padding-top: 10px;
+	text-align: center;
+}
+
+#sidemenu {
+	background-color: #2B2B2B;
+	z-index: 20;
+	/* width: 20%;
+	
+	height: 100%;
+	overflow: auto;
+	float: left;
+	
+	position: fixed;
+	left: 0px;
+	margin-top: */
+}
+
+#sidemenu #menu {
+	color: #fff;
+	text-align: right;
+	list-style-type: none;
+	margin-right: 40px;
+	float: right;
+}
+
+#sidemenu #menu li {
+	width: 150px;
+	height: 35px;
+	font-size: 1.2em;
+	padding-right: 5px;
+}
+
+#sidemenu #menu li a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+#sidemenu #menu li:active {
+	border-left: 5px solid hsl(180, 70%, 55%);
+}
+
+#sidemenu #menu li:hover {
+	background-color: #635555;
+	border-left: 5px solid hsl(180, 70%, 55%);
+}
+
+.logo {
+	/* float:left; */
+	
+}
+
+#site-content {
+	width: 100%;
+	/* height: 100%; */
+	overflow: auto;
+	/* float: left; */
+	z-index: 20;
+	position: fixed;
+	min-height: 600px;
+	/* margin-top: 10%;
+	margin-bottom: 10%;
+	margin-left: 20%; */
+	/* padding-left: 10px; */
+}
+
+#body_login {
+	margin-left: 9%;
+	/* margin-top: 6%; */
+	min-height: 600px;
+	overflow: auto;
+	position: fixed;
+	width: 80%;
+	z-index: 20;
+	float: left;
+	height: 100%;
+}

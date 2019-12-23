@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC  "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+
+<tiles-definitions>
+
+    <!-- Base Definition -->
+    <definition name="base-definition"
+                template="/WEB-INF/jsp/common/defaultLayout.jsp">
+
+        <put-attribute name="title" value="Silvassa Municipal Council" />
+        <put-attribute name="header"
+                       value="/WEB-INF/jsp/common/defaultHeader.jsp" />
+        <put-attribute name="menu"
+                       value="/WEB-INF/jsp/common/defaultMenu.jsp" />
+        <put-attribute name="body" value="" />
+        <put-attribute name="footer"
+                       value="/WEB-INF/jsp/common/defaultFooter.jsp" />
+    </definition>
+
+    <definition name="login-definition"
+                template="/WEB-INF/jsp/common/loginLayout.jsp">
+
+        <put-attribute name="title" value="Silvassa Municipal Council" />
+        <put-attribute name="header"
+                       value="/WEB-INF/jsp/common/loginHeader.jsp" />
+        <put-attribute name="body" value="" />
+        <put-attribute name="footer"
+                       value="/WEB-INF/jsp/common/defaultFooter.jsp" />
+    </definition>
+    
+    
+    <!-- login Page -->
+    <definition name="welcome" extends="base-definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/welcome.jsp" />
+    </definition>
+	
+    <definition name="login" extends="login-definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/login.jsp" />
+    </definition>
+
+
+    <!-- Property Page -->
+    <definition name="property" extends="base-definition">
+        <put-attribute name="title" value="Silvassa Municipal Council" />
+        <put-attribute name="body" value="/WEB-INF/jsp/property.jsp" />
+    </definition>
+
+
+
+    <!-- TAX Page -->
+
+    <definition name="taxgeneration" extends="base-definition">
+        <put-attribute name="body"
+                       value="/WEB-INF/jsp/taxgeneration.jsp" />
+    </definition>
+    <definition name="viewtax" extends="base-definition">
+        <put-attribute name="body"
+                       value="/WEB-INF/jsp/viewtax.jsp" />
+    </definition>
+
+    <!-- Objection Page -->
+    <definition name="objectionNew" extends="base-definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/objection.jsp" />
+    </definition>
+
+    <definition name="objection" extends="base-definition">
+        <put-attribute name="body"
+                       value="/WEB-INF/jsp/objectionExist.jsp" />
+    </definition>
+
+
+    <!-- Notice Page -->
+    <definition name="notice" extends="base-definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/notice.jsp" />
+    </definition>
+	
+    <definition name="viewnotice" extends="base-definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/viewnotice.jsp" />
+    </definition>
+	
+    <definition name="noticeAfterObjection" extends="base-definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/noticeForObjectedProperty.jsp" />
+    </definition>
+	
+
+    <!-- taxCalculate Page -->
+    <definition name="taxCollection" extends="base-definition">
+
+        <put-attribute name="body"
+                       value="/WEB-INF/jsp/taxCollection.jsp" />
+    </definition>
+
+
+
+    <!-- reports Page -->
+    <definition name="reportPropertyDetails" extends="base-definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/report/reportPropertyDetail.jsp" />
+    </definition>
+    <definition name="reportTAXDetails" extends="base-definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/report/reportTaxDetail.jsp" />
+    </definition>
+    <definition name="reportPaymentDue" extends="base-definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/report/reportPaymentDue.jsp" />
+    </definition>
+    <definition name="reportArrearDue" extends="base-definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/report/reportArrearDue.jsp" />
+    </definition>
+    <definition name="reportTAXAmount" extends="base-definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/report/reportTaxAmount.jsp" />
+    </definition>
+    <definition name="reportObjection" extends="base-definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/report/reportObjectionDetails.jsp" />
+    </definition>
+    <definition name="reportNotice" extends="base-definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/report/reportNotice.jsp" />
+    </definition>
+    <definition name="reportTAXGEN" extends="base-definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/report/reportTaxGen.jsp" />
+    </definition>
+    <definition name="reportCollection" extends="base-definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/report/reportTaxCollection.jsp" />
+    </definition>
+    <definition name="underConstruction" extends="base-definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/report/underConstruction.jsp" />
+    </definition>
+	
+
+    <!-- others Page -->
+    <definition name="others" extends="base-definition">
+
+        <put-attribute name="body" value="/WEB-INF/jsp/others.jsp" />
+    </definition>
+
+    <!-- userManagementForm -->
+    <definition name="userManagementForm" extends="base-definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/userManagementForm.jsp" />
+    </definition>
+    
+    <definition name="userRegistration" extends="base-definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/userRegistration.jsp" />
+    </definition>
+    <definition name="userManagementEditForm" extends="base-definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/userManagementEditForm.jsp" />
+    </definition>
+    <definition name="userRegistrationAdmin" extends="base-definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/userRegistrationAdmin.jsp" />
+    </definition>
+    <definition name="correctionFormReport" extends="base-definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/correctionFormReport.jsp" />
+    </definition>
+    <definition name="PropertySplit" extends="base-definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/PropertySplit.jsp" />
+    </definition>
+    <definition name="PropertyTransferWithInstrument" extends="base-definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/PropertyTransferWithInstrument.jsp" />
+    </definition>
+    <definition name="PropertyTransferWithoutInstrument" extends="base-definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/PropertyTransferWithoutInstrument.jsp" />
+    </definition>
+    
+    <definition name="PropertyTransferCollection" extends="base-definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/PropertyTransferCollection.jsp" />
+    </definition>
+    
+    <definition name="PropertyTransferWithPropertyId" extends="base-definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/PropertyTransferWithPropertyId.jsp" />
+    </definition>
+    <definition name="PropertyDuesNotClear" extends="base-definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/PropertyDuesNotClear.jsp" />
+    </definition>
+    
+    <definition name="ArrearReport" extends="base-definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/ArrearReport.jsp" />
+    </definition>
+    
+    <definition name="ArrearReportData" extends="base-definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/ArrearReportData.jsp" />
+    </definition>
+    <definition name="DemandAndCollection" extends="base-definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/DemandAndCollection.jsp" />
+    </definition>
+    <definition name="CollectionReport" extends="base-definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/CollectionReport.jsp" />
+    </definition>
+    
+    <definition name="CollectionReportData" extends="base-definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/CollectionReportData.jsp" />
+    </definition>
+    
+    
+    <definition name="PropertyTransferCollectionWithoutInstrumnent" extends="base-definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/PropertyTransferCollectionWithoutInstrumnent.jsp" />
+    </definition>
+    <definition name="PropertySplitCorrectionForm" extends="base-definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/PropertySplitCorrectionForm.jsp" />
+    </definition>
+    
+    
+    <!-- Print Receipts -->
+    <definition name="printObjReceipt" extends="base-definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/report/printObjectionReceipt.jsp" />
+    </definition>
+
+    <definition name="printPaymentReceipt" extends="base-definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/report/printPaymentReceipt.jsp" />
+    </definition>
+        
+        
+    <definition name="objectionAllocation" extends="base-definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/objectionAllocation.jsp" />
+    </definition>
+
+    <!-- PaymentApprovalWindow Page -->
+    <definition name="paymentApprovalWindow" extends="base-definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/paymentApprovalWindow.jsp" />
+    </definition>
+    
+    <!--New Class Added By Jay-->
+    <definition name="newProperty" extends="base-definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/newProperty.jsp" />
+    </definition>
+    <definition name="editProperty" extends="base-definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/editProperty.jsp" />
+    </definition>
+    <definition name="jobAllocation" extends="base-definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/jobAllocation.jsp" />
+    </definition>
+    <!--New Class Added By Jay End-->
+
+    <definition name="correctionadmin-definition" template="/WEB-INF/jsp/correction_admin/layout.jsp">
+        <put-attribute name="title" value="Silvassa Municipal Council" />
+        <put-attribute name="header" value="/WEB-INF/jsp/correction_admin/header.jsp" />
+        <put-attribute name="menu" value="/WEB-INF/jsp/correction_admin/menu.jsp" />
+        <put-attribute name="body" value="" />
+        <put-attribute name="footer" value="/WEB-INF/jsp/correction_admin/footer.jsp" />
+    </definition> 
+    <definition name="correction_compare" extends="correctionadmin-definition" >
+        <put-attribute name="body" value="/WEB-INF/jsp/correction_compare.jsp" />
+    </definition>
+   
+    <definition name="dashboard" extends="correctionadmin-definition" >
+        <put-attribute name="body" value="/WEB-INF/jsp/correction_admin/dashboard.jsp" />
+    </definition>
+    
+    <definition name="correction-definition" template="/WEB-INF/jsp/common/correctionLayout.jsp">
+        <put-attribute name="title" value="Silvassa Municipal Council" />
+        <put-attribute name="header" value="" />
+        <put-attribute name="body" value="" />
+        <put-attribute name="footer" value="" />
+    </definition>
+    <definition name="userRegistrationAdminForm" extends="correction-definition" >
+        <put-attribute name="body" value="/WEB-INF/jsp/userRegistrationAdminForm.jsp" />
+    </definition>
+    <definition name="correction_compare" extends="correction-definition" >
+        <put-attribute name="body" value="/WEB-INF/jsp/correction_compare.jsp" />
+    </definition>
+    <definition name="OffLineToOnLine" extends="correction-definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/OffLineToOnLine.jsp" />
+    </definition>
+    <definition name="success" extends="base-definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/success.jsp" />
+    </definition>
+    <definition name="correction_compare_offline" extends="correction-definition" >
+        <put-attribute name="body" value="/WEB-INF/jsp/correction_compare_offline.jsp" />
+    </definition>
+    
+    <definition name="correction_all_list" extends="correctionadmin-definition" >
+        <put-attribute name="body" value="/WEB-INF/jsp/correction_all_list.jsp" />
+    </definition>
+    <definition name="correction_field_list" extends="correctionadmin-definition" >
+        <put-attribute name="body" value="/WEB-INF/jsp/correction_field_list.jsp" />
+    </definition>
+    <definition name="correction_inbox_list" extends="correctionadmin-definition" >
+        <put-attribute name="body" value="/WEB-INF/jsp/correction_inbox_list.jsp" />
+    </definition>
+    <definition name="correction_overdue_list" extends="correctionadmin-definition" >
+        <put-attribute name="body" value="/WEB-INF/jsp/correction_overdue_list.jsp" />
+    </definition>
+    <definition name="correction_reject_list" extends="correctionadmin-definition" >
+        <put-attribute name="body" value="/WEB-INF/jsp/correction_reject_list.jsp" />
+    </definition>
+    <definition name="correction_solve_list" extends="correctionadmin-definition" >
+        <put-attribute name="body" value="/WEB-INF/jsp/correction_solve_list.jsp" />
+    </definition>
+    <definition name="correction_apply_list" extends="correctionadmin-definition" >
+        <put-attribute name="body" value="/WEB-INF/jsp/correction_apply_list.jsp" />
+    </definition>
+    <definition name="correction_alloffline_list" extends="correctionadmin-definition" >
+        <put-attribute name="body" value="/WEB-INF/jsp/correction_alloffline_list.jsp" />
+    </definition>
+    <definition name="locateOnMap" extends="base-definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/locateOnMap.jsp" />
+    </definition>
+    
+</tiles-definitions>
